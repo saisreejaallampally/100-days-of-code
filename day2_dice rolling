@@ -1,0 +1,10 @@
+import random
+num_on_dice=random.randint(1,6)
+print(f"You rolled:{num_on_dice}")
+choice=input("Roll Again?(yes/no)")
+while choice=="yes":
+        num_on_dice=random.randint(1,6)
+        print(f"You rolled:{num_on_dice}")
+        choice=input("Roll Again?")
+
+print("Thanks for playing!")
