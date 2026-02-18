@@ -1,0 +1,16 @@
+
+n=int(input("Enter the size:"))
+arr=[]
+for i in range(1,n+1):
+    ele=int(input(f"Enter element {i}:"))
+    arr.append(ele)
+largest=arr[0]
+second_largest=-9999
+for i in range(n):
+    if arr[i]>largest:
+        second_largest=largest
+        largest=arr[i]
+    elif arr[i]>second_largest and arr[i]!=largest:
+        second_largest=arr[i]
+print(second_largest)
+        
