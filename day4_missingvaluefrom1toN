@@ -1,0 +1,12 @@
+n=int(input("Enter the size:"))
+arr=[]
+for i in range(n-1):
+    ele=int(input(f"Enter element {i+1}:"))
+    arr.append(ele)
+actual_sum=(n*(n+1))//2
+sum=0
+for i in range(n-1):
+    sum=sum+arr[i]
+missing_element=actual_sum-sum
+print(missing_element)
+    
