@@ -1,0 +1,16 @@
+n=int(input("Enter the size:"))
+arr=[]
+for i in range(n):
+    ele=int(input(f"Enter element {i+1}:"))
+    arr.append(ele)
+k=int(input("Enter the value of k:"))
+found=False
+for i in range(n):
+    if arr[i]==k:
+        found=True
+        print(f"found at index {i}")
+        break
+if not found:
+    print("not found")
+    
+    
