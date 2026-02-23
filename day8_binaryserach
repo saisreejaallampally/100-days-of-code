@@ -1,0 +1,20 @@
+n = int(input("Enter the size: "))
+arr = []
+for i in range(n):
+    ele = int(input(f"Enter element {i+1}: "))
+    arr.append(ele)
+arr.sort()
+low = 0
+high = n - 1
+key = int(input("Enter key: "))
+while low <= high:
+    mid = (low + high) // 2
+    if arr[mid] == key:
+        print(f"Element found at index {mid}")
+        break
+    elif key < arr[mid]:
+        high = mid - 1
+    else:
+        low = mid + 1
+else:
+    print("not found")
