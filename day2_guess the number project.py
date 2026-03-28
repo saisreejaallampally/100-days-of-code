@@ -6,8 +6,7 @@ guess=int(input("enter your guess:"))
 attempts=1
 while guess!=secret:
     if guess>secret:
-        print("Too high")
-        
+        print("Too high")       
     else:
         print("Too low")
     attempts=attempts+1
