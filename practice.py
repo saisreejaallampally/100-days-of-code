@@ -362,6 +362,15 @@ n=3
 #     a=b
 #     b=c
 
+# s=['v','a','r','u','n']
+# i=0
+# j=len(s)-1
+# for i in range(j):
+
+
+
+
+
 
 
 
