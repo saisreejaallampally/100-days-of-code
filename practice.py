@@ -367,6 +367,36 @@ n=3
 # j=len(s)-1
 # for i in range(j):
 
+"""n=int(input(""))
+matrix=[]
+for i in range(n):
+    row=[]
+    for j in range(n):
+        ele=int(input("Enter the element:"))
+        row.append(ele)
+    matrix.append(row)
+for i in matrix:
+    print(i)"""
+
+arr=[1,-4,9,-1,5,6]
+k=3
+sum=sum(arr[:k])
+max_sum=sum
+l=0
+r=k
+while(r<len(arr)-1):
+    sum=sum-arr[l]
+    l+=1
+    sum=sum+arr[r]
+    r+=1
+    max_sum=max(sum,max_sum)
+print(max_sum)
+
+
+
+    
+    
+
 
 
 
