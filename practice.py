@@ -378,19 +378,59 @@ for i in range(n):
 for i in matrix:
     print(i)"""
 
-arr=[1,-4,9,-1,5,6]
-k=3
-sum=sum(arr[:k])
-max_sum=sum
+# arr=[1,-4,9,-1,5,6]
+# k=3
+# sum=sum(arr[:k])
+# max_sum=sum
+# l=0
+# r=k
+# while(r<len(arr)-1):
+#     sum=sum-arr[l]
+#     l+=1
+#     sum=sum+arr[r]
+#     r+=1
+#     max_sum=max(sum,max_sum)
+# print(max_sum)
+
+
+# arr=[6,8,3,7,5,2]
+# k=20
+# n=len(arr)
+# l=0
+# r=0
+# sum=0
+# maxlength=0
+# while(r<n):
+#     sum+=arr[r]
+#     if sum<=k:
+#         maxlength=max(maxlength,r-l+1)
+#     else:
+#         sum-=arr[l]
+#         l+=1
+#     r+=1
+# print(maxlength)
+    
+arr=[6,8,3,7,5,2,20]
+k=20
+n=len(arr)
 l=0
-r=k
-while(r<len(arr)-1):
-    sum=sum-arr[l]
-    l+=1
-    sum=sum+arr[r]
+r=0
+sum=0
+maxlength=0
+while(r<n):
+    sum+=arr[r]
+    while(sum>k):
+        sum-=arr[l]
+        l+=1
+    maxlength=max(maxlength,r-l+1)
     r+=1
-    max_sum=max(sum,max_sum)
-print(max_sum)
+print(maxlength)
+
+
+
+
+
+
 
 
 
