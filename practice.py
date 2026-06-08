@@ -410,21 +410,36 @@ for i in matrix:
 #     r+=1
 # print(maxlength)
     
-arr=[6,8,3,7,5,2,20]
-k=20
-n=len(arr)
-l=0
-r=0
-sum=0
-maxlength=0
-while(r<n):
-    sum+=arr[r]
-    while(sum>k):
-        sum-=arr[l]
-        l+=1
-    maxlength=max(maxlength,r-l+1)
-    r+=1
-print(maxlength)
+# arr=[6,8,3,7,5,2,20]
+# k=20
+# n=len(arr)
+# l=0
+# r=0
+# sum=0
+# maxlength=0
+# while(r<n):
+#     sum+=arr[r]
+#     while(sum>k):
+#         sum-=arr[l]
+#         l+=1
+#     maxlength=max(maxlength,r-l+1)
+#     r+=1
+# print(maxlength)
+
+arr=[6,2,3,4,7,2,1,7,1]
+r=len(arr)-1
+k=4
+lsum=sum(arr[:k])
+rsum=0
+maxsum=lsum
+for i in range(k-1,-1,-1):
+    lsum-=arr[i]
+    rsum+=arr[r]
+    sum=lsum+rsum
+    maxsum=max(sum,maxsum)
+    r-=1
+print(maxsum)
+
 
 
 
