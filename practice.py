@@ -426,19 +426,60 @@ for i in matrix:
 #     r+=1
 # print(maxlength)
 
-arr=[6,2,3,4,7,2,1,7,1]
-r=len(arr)-1
-k=4
-lsum=sum(arr[:k])
-rsum=0
-maxsum=lsum
-for i in range(k-1,-1,-1):
-    lsum-=arr[i]
-    rsum+=arr[r]
-    sum=lsum+rsum
-    maxsum=max(sum,maxsum)
-    r-=1
-print(maxsum)
+# arr=[6,2,3,4,7,2,1,7,1]
+# r=len(arr)-1
+# k=4
+# lsum=sum(arr[:k])
+# rsum=0
+# maxsum=lsum
+# for i in range(k-1,-1,-1):
+#     lsum-=arr[i]
+#     rsum+=arr[r]
+#     sum=lsum+rsum
+#     maxsum=max(sum,maxsum)
+#     r-=1
+# print(maxsum)
+
+# arr=[1,2,3,4,5]
+# k=3
+# windsum=sum(arr[:k])
+# maxsum=windsum
+# for i in range (k,len(arr)):
+#     windsum=windsum-arr[i-k]+arr[i]
+#     maxsum=max(windsum,maxsum)
+# print(maxsum)
+
+# arr=[1,2,3,4,5]
+# k=3
+# l=0
+# r=k-1
+# sum=sum(arr[:k])
+# maxsum=sum
+# while(r<len(arr)-1):
+#     sum=sum-arr[l]
+#     l+=1
+#     r+=1
+#     sum=sum+arr[r]
+#     maxsum=max(sum,maxsum)
+# print(maxsum)
+
+# arr=[12,-1,-7,8,-15,30]
+# k=4
+# negarr=[]
+# wind=arr[:k]
+# for i in wind:
+#     if i<0:
+#         negarr.append(i)
+#         break
+# for i in range(k,len(arr)):
+#     wind.remove(arr[i-k])
+#     wind.append(arr[i])
+#     for i in wind:
+#         if i<0:
+#             negarr.append(i)
+#             break
+# print(negarr)
+
 
 
 
