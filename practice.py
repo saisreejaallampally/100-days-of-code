@@ -480,6 +480,52 @@ for i in matrix:
 #             break
 # print(negarr)
 
+# s="aabcabcdd"
+# n=len(s)
+# l=0
+# r=0
+# visited=set()
+# maxlen=0
+# while (r<n):
+#     if s[r] not in visited:
+#         visited.add(s[r])
+#         len=r-l+1
+#         r+=1
+#     else:
+#         visited.remove(s[r])
+#         l+=1
+#     maxlen=max(len,maxlen)
+# print(maxlen)
+
+arr=[2,3,1,2,4,3]
+n=len(arr)
+l=0
+r=0
+target=6
+sum=0
+minlen=float('inf')
+while(r<n):
+    sum+=arr[r]
+    while(sum>=target):
+       minlen=min(minlen,r-l+1)
+       sum-=arr[l]
+       l+=1
+    r+=1
+print(minlen)
+
+
+    
+    
+
+
+
+    
+
+
+
+
+
+    
 
 
 
