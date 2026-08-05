@@ -497,35 +497,385 @@ for i in matrix:
 #     maxlen=max(len,maxlen)
 # print(maxlen)
 
-arr=[2,3,1,2,4,3]
-n=len(arr)
-l=0
-r=0
-target=6
-sum=0
-minlen=float('inf')
-while(r<n):
-    sum+=arr[r]
-    while(sum>=target):
-       minlen=min(minlen,r-l+1)
-       sum-=arr[l]
-       l+=1
-    r+=1
-print(minlen)
+# arr=[2,3,1,2,4,3]
+# n=len(arr)
+# l=0
+# r=0
+# target=6
+# sum=0
+# minlen=float('inf')
+# while(r<n):
+#     sum+=arr[r]
+#     while(sum>=target):
+#        minlen=min(minlen,r-l+1)
+#        sum-=arr[l]
+#        l+=1
+#     r+=1
+# print(minlen)
 
+# for i in range(5):
+#     for j in range(5):
+#         print("*",end="")
+#     print()
+
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(i,end="")
+#     print()
+
+
+# for i in range(6):
+#     for j in range(1,6-i):
+#         print(j,end="")
+#     print()
+
+
+# n=5
+# for i in range(1,n):
+#     for j in range(i):
+#         print(" ",end="")
+#     for k in range(2*(n-i)-1):
+#         print("*",end="")
+#     print()
+
+# n=5
+# for i in range(1,n):
+#     for j in range(i):
+#         print("*",end="")
+#     for k in range(n-i-1):
+#         print(" ",end="")
+#     for l in range(n-i-1):
+#         print(" ",end="")
+#     for m in range(i):
+#         print("*",end="")
+#     print()
+
+# n=5
+# for i in range(1,5):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     for k in range(i):
+#         print("*",end="")
+#     print()
+
+# arr=[4,2,6,2,5,1,8,]
+# n=len(arr)
+# l=0
+# r=0
+# maxlen=0
+# visited=set()
+# while r<n:
+#     if arr[r] not in visited:
+#         visited.add(arr[r])
+#         len=r-l+1
+#         r+=1
+#     else:
+#         visited.remove(arr[r])
+#         l+=1
+#     maxlen=max(len,maxlen)
+# print(maxlen)
+
+# arr=[4,3,7,9,6,2,8]
+# n=len(arr)
+# target=16
+# minlen=float('inf')
+# l=0
+# r=0
+# sum=0
+# while r<n:
+#     sum+=arr[r]
+#     while(sum>=target):
+#         minlen=min(minlen,r-l+1)
+#         sum-=arr[l]
+#         l+=1
+#     r+=1
+# print(minlen)
+
+# n=int(input())
+# arr=[]
+# for i in range(n):
+#     val=int(input())
+#     arr.append(val)
+# max=arr[0]
+# min=arr[0]
+# for num in arr:
+#     if num>max:
+#         max=num
+#     if num<min:
+#         min=num
+# print(max,min)
+
+# n=int(input())
+# arr=[]
+# for i in range(n):
+#     val=int(input())
+#     arr.append(val)
+# max=arr[0]
+# secmax=arr[0]
+# for num in arr:
+#     if num>max:
+#         secmax=max
+#         max=num
+#     elif num>secmax and num!=max:
+#         secmax=num
+# print(secmax)
+
+# arr=[2,6,7,1,9]
+# print(arr[::-1])
+
+# arr=[1,2,3,4,5]
+# revarr=[]
+# for i in range(len(arr)-1,-1,-1):
+#     print(list[arr[i]])
+
+# arr=[2,8,6,3,4]
+# for i in range(len(arr)):
+#     for j in range(i):
+#         if arr[j]>arr[j+1]:
+#             arr[j],arr[j+1]=arr[j+1],arr[j]
+
+# print(arr)
+
+# lst=[1,2,3,6,1,2,4,8,3]
+# seen=[]
+# for num in lst:
+#     if num not in seen:
+#         seen.append(num)
+# print(seen)
+
+# lst=[1,2,3,6,1,2,4,8,3]
+# seen=[]
+# for i in lst:
+#     if i not in seen:
+#         count=0
+#         for j in lst:
+#             if i==j:
+#                 count+=1
+#                 seen.append(i)
+#         print(i,":",count)
+
+
+# n=int(input())
+# num=input().split()
+# for i in range(n):
+#     num[i]=int(num[i])
+# print(num)
+
+
+
+# lst=[2,6,4,8,7,1,3]
+# k=3
+# window_sum=sum(lst[:k])
+# max_sum=window_sum
+# for i in range(k,len(lst)):
+#     window_sum=window_sum-lst[i-k]+lst[i]
+#     max_sum=max(max_sum,window_sum)
+# print(max_sum)
+
+
+# lst=[2,6,4,8,7,1,3]
+# k=3
+# l=0
+# r=k-1
+# window_sum=sum(lst[:k])
+# max_sum=window_sum
+# while(r<len(lst)-1):
+#     window_sum=window_sum-lst[l]
+#     l+=1
+#     r+=1
+#     window_sum=window_sum+lst[r]
+#     max_sum=max(max_sum,window_sum)
+# print(max_sum)
+
+
+# lst=[2,6,4,8,7,1,3]
+# k=3
+# l=0
+# r=k-1
+# window_sum=sum(lst[:k])
+# while(r<len(lst)-1):
+#     window_sum=window_sum-lst[l]
+#     l+=1
+#     r+=1
+#     window_sum=window_sum+lst[r]
+    
+
+# arr=[5,2,9,4,3,7]
+# k=3
+# i=0
+# j=k-1
+# window_sum=sum(arr[:k])
+# max_sum=window_sum
+# while j<len(arr)-1:
+#     window_sum=window_sum-arr[i]
+#     i+=1
+#     j+=1
+#     window_sum=window_sum+arr[j]
+#     max_sum=max(max_sum,window_sum)
+# print(max_sum)
+
+
+# arr=[5,2,9,4,3,7]
+# k=3
+# i=0
+# j=k-1
+# window_sum=sum(arr[:k])
+# max_sum=window_sum
+# start=0
+# while(j<len(arr)-1):
+#     window_sum=window_sum-arr[i]
+#     i+=1
+#     j+=1
+#     window_sum=window_sum+arr[j]
+#     if window_sum>max_sum:
+#         max_sum=window_sum
+#         start=i
+# print(max_sum)
+# print(arr[start:start+k])
+
+
+# arr=[2, 2, 2, 2, 5, 5, 5, 8]
+# k=3
+# i=0
+# j=k-1
+# target=4
+# window_sum=sum(arr[:k])
+# count=0
+# start=0
+# if window_sum/k>=target:
+#     count+=1
+#     print(arr[start:start+k])
+# while(j<len(arr)-1):
+#     window_sum=window_sum-arr[i]
+#     i+=1
+#     j+=1
+#     window_sum=window_sum+arr[j]
+#     if window_sum/k>=target:
+#         count+=1
+#         start=i
+#         print(arr[start:start+k])
+# print(count)
+
+
+# s="abiudflaoidj"
+# k=3
+# i=0
+# j=k-1
+# count=0
+# maxcount=count
+# start=0
+# for ch in s[:k]:
+#     if ch in "aeiou":
+#         count+=1
+# while(j<len(s)-1):
+#     if s[i] in "aeiou":
+#         count-=1
+#     i+=1
+#     j+=1
+#     if s[j] in "aeiou":
+#         count+=1
+#     if count>maxcount:
+#         maxcount=count
+#         start=i
+# print(maxcount)
+# print(s[start:start+k])
+
+
+
+# s="abcabcbb"
+# i=0
+# j=0
+# seen=set()
+# max_length=0
+# while j<len(s):
+#     if s[j] not in seen:
+#         seen.add(s[j])
+#         max_length=max(max_length,j-i+1)
+#         j+=1
+#     else:
+#         seen.remove(s[i])
+#         i+=1
+# print(max_length)
 
     
+
+# arr=[1,2,3,1,1,1,4,5,1,1,1,1,4,2,1]
+# i=0
+# j=0
+# max_length=0
+# start=0
+# while(j<len(arr)):
+#     if arr[j]==1:
+#         if j - i + 1 > max_length:
+#            max_length = j - i + 1
+#            start = i
+#     else:
+#         i=j+1
+#     j+=1
+# print(max_length)
+# print(arr[start:start+max_length])
+
+
+
+# arr=[2,3,1,2,4,3]
+# target=7
+# n=len(arr)
+# l=0
+# r=0
+# sum=0
+# min_len=999
+# while(r<n):
+#     sum=sum+arr[r]
+#     while(sum>=target):
+#         min_len=min(min_len,r-l+1)
+#         sum=sum-arr[l]
+#         l+=1
+#     r+=1
+# print(min_len)
+
+
+
+# arr=[1,1,1,0,0,0,1,1,1,1,0]
+# count=0
+# max_length=0
+# for num in arr:
+#     if num==1:
+#         count+=1
+#     else:
+#         count=0
+#     max_length=max(max_length,count)
+# print(max_length)
     
 
+# arr=[1,1,1,0,0,0,1,1,1,1,0]
+# k=2
+# i=0
+# zero_count=0
+# ans=0
+# for j in range(len(arr)):
+#     if arr[j]==0:
+#         zero_count+=1
+#     while(zero_count>k):
+#         if arr[i]==0:
+#             zero_count-=1
+#         i+=1
+#     ans=max(ans,j-i+1)
+# print(ans)
 
 
-    
+s="abcabcbb"
+i=0
+count=0
+dict={}
 
 
 
 
 
-    
+
+
+
+
 
 
 
