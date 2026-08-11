@@ -4,6 +4,7 @@
 # }
 # print(d)
 
+
 # d={}
 # n=int(input())
 # for i in range(n):
@@ -11,6 +12,7 @@
 #     value=input("value:")
 #     d[key]=value
 # print(d)
+
 
 # d={}
 # n=int(input())
@@ -61,15 +63,6 @@
 # del d["place"]
 # print(d)
 
-
-# lst = list(map(int, input().split()))
-# d = {}
-# largest = lst[0]
-
-# for key in d:
-#     if key > largest:
-#         largest = key
-# print("Largest =", largest)
 
 
 # arr=[2,5,3,9,3,5,7,4,7]
@@ -201,3 +194,103 @@
 #         print(key)
 #         break
 
+
+
+# lst=list(map(int,input().split()))
+# d={}
+# max=lst[0]
+# for key in lst:
+#     if key 
+
+
+# d={
+#     "banana":30,
+#     "apple":50,
+#     "mango":20
+# }
+# d["banana"]=35
+# print(d)
+
+
+# d = {"A": 10, "B": 20, "C": 30}
+# d["D"]=40
+# d["B"]=50
+# del d["A"]
+# print(d)
+
+
+# arr=[1,2,3,4,3,2,1]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+# print(d)
+
+
+# arr=[1,2,3,4,3,2,1,3,3]
+# d={}
+# max=0
+# ans=0
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+#     if d[num]>max:
+#         max=d[num]
+#         ans=num
+# print(max)
+# print(ans)
+
+
+# arr=[1,2,3,4,3,2,1,3,3]
+# d={}
+# max=0
+# ans=0
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+#     if d[num]>max:
+#         max=d[num]
+#         ans=num
+# print(ans,":",max)
+
+
+# arr = [1, 2, 3, 2, 4, 2, 5]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+#     if d[num]==3:
+#         print(num)
+
+
+# arr = [1, 2, 3, 2, 4, 2, 5, 3, 3]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+# for key in d:
+#     if d[key]==3:
+#         print(key)
+
+
+arr=[4, 5, 1, 2, 1, 5, 4, 6]
+d={}
+for num in arr:
+    if num in d:
+        d[num]+=1
+    else:
+        d[num]=1
+for num in arr:
+    if d[num]==1:
+        print(num)
+        break
