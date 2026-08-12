@@ -863,12 +863,10 @@ for i in matrix:
 # print(ans)
 
 
-s="abcabcbb"
-i=0
-count=0
-dict={}
 
-
+arr = [[1, 2], [3, 4], [5, 6]]
+for i in range(len(arr)):
+    print(arr[i][1])
 
 
 

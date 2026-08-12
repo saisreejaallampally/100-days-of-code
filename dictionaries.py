@@ -283,14 +283,64 @@
 #         print(key)
 
 
-arr=[4, 5, 1, 2, 1, 5, 4, 6]
-d={}
-for num in arr:
-    if num in d:
-        d[num]+=1
-    else:
-        d[num]=1
-for num in arr:
-    if d[num]==1:
-        print(num)
-        break
+# arr=[4, 5, 1, 2, 1, 5, 4, 6]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+# for num in arr:
+#     if d[num]==1:
+#         print(num)
+#         break
+
+
+
+# arr=[4, 2, 7, 2, 5, 4]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+#     if d[num]>1:
+#         print(num)
+
+
+# arr=[4, 2, 7, 2, 5, 4]
+# d={}
+# for num in arr:
+#     if num in d:
+#         print(num)
+#     else:
+#         d[num]=1
+
+
+# arr = [4, 2, 7, 2, 5, 4]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+# for key in d:
+#     if d[key]>1:
+#         print(key)
+#         break/
+
+
+# arr=[4, 2, 7, 2, 5, 4]
+# d={}
+# for num in arr:
+#     if num in d:
+#         print(num)
+#         break
+#     else:
+#         d[num]=1
+
+
+
+
+
+
