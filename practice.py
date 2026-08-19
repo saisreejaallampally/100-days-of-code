@@ -864,14 +864,67 @@ for i in matrix:
 
 
 
-arr = [[1, 2], [3, 4], [5, 6]]
-for i in range(len(arr)):
-    print(arr[i][1])
+# s="abcabcbb"
+# l=0
+# r=0
+# window=set()
+# ans=0
+# start=0
+# while(r<len(s)):
+#     while s[r] in window:
+#         window.remove(s[l])
+#         l+=1
+#     window.add(s[r])
+#     if r-l+1>ans:
+#         ans=r-l+1
+#         start=l
+#     r+=1
+# print(ans)
+# print(s[start:start+ans])
 
 
+# arr = [1, 2, 3, 4, 5, 6]
+# k = 3
+# window_sum=sum(arr[:k])
+# max_sum=0
+# for i in range(k,len(arr)):
+#     window_sum=window_sum-arr[i-k]+arr[i]
+#     max_sum=max(window_sum,max_sum)
+# print(max_sum)
 
 
+# arr = [1, 2, 3, 4, 5, 6]
+# k = 3
+# window_sum=sum(arr[:k])
+# max_sum=0
+# l=0
+# r=k-1
+# while(r<len(arr)-1):
+#     window_sum-=arr[l]
+#     l+=1
+#     r+=1
+#     window_sum+=arr[r]
+#     max_sum=max(window_sum,max_sum)
+# print(max_sum)
 
+
+arr = [2, 3, 1, 2, 4, 3]
+target = 7
+l=0
+r=0
+sum=0
+ans=999
+start=l
+while(r<len(arr)):
+    sum+=arr[r]
+    while(sum>=target):
+        ans=min(ans,r-l+1)
+        sum-=arr[l]
+        l+=1
+    r+=1
+print(ans)
+
+    
 
 
 
