@@ -26,11 +26,13 @@ print(consonants)"""
 print(s[::-1])
 print(s[1:])
 print(s[:-2])"""
+
 """s="python"
 rev=""
 for i in range (len(s)-1,-1,-1):
     rev+=s[i]
 print(rev)"""
+
 """n=int(input("Enter the number:"))
 lst=[]
 for i in range(n):
@@ -41,12 +43,14 @@ for i in range(n):
     if lst[i]>max:
         max=lst[i]
 print(max)"""
+
 """lst=[5,4,6,9,9,2]
 new_lst=[]
 for ele in lst:
     if ele not in new_lst:
         new_lst.append(ele)
 print(new_lst)"""
+
 """lst=[5,3,7,6,1]
 max=lst[0]
 for i in range(len(lst)):
@@ -57,6 +61,7 @@ for i in range(len(lst)):
             lst[j]=temp
 for i in range(len(lst)):
     print(lst[i])"""
+
 """lst=[6,3,7,5,1]
 max=lst[0]
 sec_max=lst[0]
@@ -67,6 +72,7 @@ for ele in lst:
     elif ele>sec_max and ele!=max:
         sec_max=ele
 print(sec_max)"""
+
 """def sum_of_num(n):
     sum=0
     while n>0:
@@ -104,12 +110,14 @@ for num in range(2,n+1):
            count+=1
    if count==2:
        print(num)"""
+
 """for i in range(2,100):
     for j in range(2,i):
         if i%j==0:
             break
     else:
         print(i)"""
+
 """n=int(input("Enter:"))
 count=0
 for i in range(1,n+1):
@@ -125,17 +133,20 @@ for ch in s:
     if ch.isalpha():
        length+=1
 print(length)"""
+
 """n=5
 fact=1
 for i in range(1,n+1):
    fact*=i
 print(fact)"""
+
 """def fact(n):
     res=1
     for i in range(1,n+1):
         res*=i
     return res
 print(fact(5))"""
+
 """s="varun"
 rev=""
 for i in range(len(s)-1,-1,-1):
@@ -908,51 +919,156 @@ for i in matrix:
 # print(max_sum)
 
 
-arr = [2, 3, 1, 2, 4, 3]
-target = 7
-l=0
-r=0
-sum=0
-ans=999
-start=l
-while(r<len(arr)):
-    sum+=arr[r]
-    while(sum>=target):
-        ans=min(ans,r-l+1)
-        sum-=arr[l]
-        l+=1
-    r+=1
-print(ans)
+# arr = [2, 3, 1, 2, 4, 3]
+# target = 7
+# l=0
+# r=0
+# sum=0
+# ans=999
+# start=l
+# while(r<len(arr)):
+#     sum+=arr[r]
+#     while(sum>=target):
+#         ans=min(ans,r-l+1)
+#         sum-=arr[l]
+#         l+=1
+#     r+=1
+# print(ans)
 
     
 
+# s=input()
+# if s==s[::-1]:
+#     print("palindrome")
+# else:
+#     print("no")
 
 
+# s=input()
+# i=0
+# j=len(s)-1
+# while(i<j):
+#     if s[i]!=s[j]:
+#         print("no")
+#         break
+#     i+=1
+#     j-=1
+# else:
+#     print("palindrome")
 
 
+# s=input()
+# for i in range(len(s)-1,-1,-1):
+#     print(s[i],end="")
 
 
+# s=input()
+# rev=""
+# for i in range(len(s)-1,-1,-1):
+#     rev+=s[i]
+# print(rev)
 
 
+# n=int(input())
+# for i in range(2,n):
+#     if n%i==0:
+#         print("no")
+#         break
+# else:
+#     print("prime")
+            
+
+# n=int(input())
+# count=0
+# for i in range(1,n):
+#     if n%i==0:
+#         count+=1
+# if count==2:
+#     print("prime")
+# else:
+#     print("no")
 
 
+# n=int(input())
+# fact=1
+# for i in range(1,n+1):
+#     fact*=i
+# print(fact)
 
 
+# n=6
+# a=0
+# b=1
+# for i in range(n):
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
 
     
-    
+# n=int(input())
+# rev=0
+# while(n!=0):
+#     rem=n%10
+#     rev=rev*10+rem
+#     n=n//10
+# print(rev)
 
 
+# arr=[1,2,4,2,5,1,3]
+# d={}
+# for num in arr:
+#     if num in d:
+#         d[num]+=1
+#     else:
+#         d[num]=1
+# print(d) 
 
 
+# s1="silenced"
+# s2="listen"
+# if len(s1)!=len(s2):
+#     print("no")
+# else:
+#  for ch in s1:
+#     if s1.count(ch)!=s2.count(ch):
+#         print("no")
+#         break
+#  else:
+#     print("anagram")
 
 
+# arr=list(map(int,input().split()))
+# max=arr[0]
+# sec_max=arr[0]
+# for i in arr:
+#     if i>max:
+#         sec_max=max
+#         max=i
+#     elif i!=max and i>sec_max:
+#         sec_max=i
+# print(max)
+# print(sec_max)
 
 
+# arr=list(map(int,input().split()))
+# new_arr=[]
+# for i in arr:
+#     if i==0:
+#         new_arr.append(i)
+#         arr.remove(i)
+# print(arr+new_arr)
 
 
-
-
+# arr=list(map(int,input().split()))
+# n=len(arr)
+# i=0
+# for j in range(1,n+1):
+#     if arr[i]!=0:
+#         i+=1
+#     else:
+#         arr[i],arr[j]=arr[j],arr[i]
+# print(arr)
 
 
 
