@@ -362,14 +362,78 @@
 #         c_count+=1
 # print('a'+str(a_count)+'b'+str(b_count)+'c'+str(c_count))
 
-s="aaabbc"
-visited=""
-for i in s:
-    count=0
-    if i not in visited:
-      visited+=i
-      for j in s:
-        if i==j:
-            count+=1
-      print(i+str(count),end="")
+# s="aaabbc"
+# visited=""
+# for i in s:
+#     count=0
+#     if i not in visited:
+#       visited+=i
+#       for j in s:
+#         if i==j:
+#             count+=1
+#       print(i+str(count),end="")
       
+# lst=[1,2,3,4,5]
+# n_lst=[]
+# for i in lst:
+#     n_lst.append(i)
+# print(n_lst)
+
+# lst=[4,6,4,2,6,5]
+# n_lst=[]
+# for i in lst:
+#     if i not in n_lst:
+#         n_lst.append(i)
+# print(n_lst)
+
+# lst=[4,6,4,2,6,5]
+# n_lst=[]
+# d={}
+# for i in lst:
+#     if i not in d:
+#         d[i]=1
+#         n_lst.append(i)
+# print(n_lst)
+    
+# lst=[4,6,5,7,4,3,5]
+# lst.sort()
+# i=0
+# for j in range(1,len(lst)):
+#     if lst[i]!=lst[j]:
+#         i+=1
+#         lst[i]=lst[j]
+# print(lst[:i+1])
+
+# lst=[5,3,5,4,2,3]
+# d={}
+# for i in lst:
+#     if i not in d:
+#         d[i]=1
+#     else:
+#         d[i]+=1
+# for i in d:
+#   if d[i]==1:
+#       print(i)
+
+# lst=[5,0,3,6,0,1,0,0,2]
+# lst1=[]
+# lst2=[]
+# for i in lst:
+#     if i!=0:
+#         lst1.append(i)
+#     else:
+#         lst2.append(i)
+# print(lst1+lst2)
+
+# lst1=[1,2,3,4,5]
+# lst2=[1,2,4,5]
+# print(sum(lst1)-sum(lst2))
+
+# lst=[5,0,3,6,0,1,0,0,2]
+# i=0
+# for j in range(len(lst)):
+#     if lst[j]!=0:
+#         lst[i],lst[j]=lst[j],lst[i]
+#         i+=1
+# print(lst)
+
